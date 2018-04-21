@@ -1,0 +1,26 @@
+img {
+    width: 250px;
+    height: 180px;
+    float: left;
+}
+
+#button {
+    color: red;
+    
+}
+h1 {
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#big-button {
+    text-align: center;
+}
