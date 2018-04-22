@@ -43,7 +43,7 @@ function displayGifInfo() {
    var search = $(this).attr("data-search");
     
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dRMgGOE4F5aMUkRDnIRkZ5nK5W6N5rW4&limit=5";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dRMgGOE4F5aMUkRDnIRkZ5nK5W6N5rW4&limit=8";
 
         $.ajax ({url: queryURL,method: 'GET'})
         .then(function(response){
@@ -80,6 +80,8 @@ function displayGifInfo() {
     gifs.push(gif);
     // call the function that creates and pushes the button to the buttons DIV 
     createButton();
+    // empty the content in the button
+    $("#gif-form")[0].reset();
  })
 
 
