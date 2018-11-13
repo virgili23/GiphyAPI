@@ -1,31 +1,96 @@
+/* Global Features */
+
+
 body {
     margin-left: auto;
     margin-right: auto;
 }
-img {
-    width: 250px;
-    height: 180px;
-    
-    float: left;
-}
 
-#button {
-    color: red;
-    
-}
 h1 {
     text-align: center;
-
+    font-size: 3em;
 }
 
 h2 {
     text-align: center;
+    font-size: 1.5em;
 }
 
 h3 {
     text-align: center;
 }
 
+/* Intro */
+
+.intro {
+    padding: 3%;
+    background: lightblue;
+}
+
+/* Form */
+#button {
+    color: red;
+    /* background: purple; */
+    padding: 1%;
+}
+
 #big-button {
     text-align: center;
+    /* background: blue; */
+    /* padding: 2%; */
+}
+
+
+/* div containing all the buttons */
+#buttons-view {
+    /* background: green; */
+    padding: 2%;
+}
+
+/* class given to newly created buttons */
+.gif-btn {
+    background-color: #f44336; 
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+img {
+    width: 250px;
+    height: 180px;
+    float: left;
+}
+
+/* text-area */
+#gif-input {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* gif making button */
+#add-gif {
+    background: green;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

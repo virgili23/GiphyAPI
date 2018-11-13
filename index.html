@@ -11,32 +11,44 @@
  <!-- api key: dRMgGOE4F5aMUkRDnIRkZ5nK5W6N5rW4 -->
 
  <!-- working link: https://api.giphy.com/v1/gifs/search?q=cat&api_key=dRMgGOE4F5aMUkRDnIRkZ5nK5W6N5rW4 -->
- <h1>My Giphy Library</h1>
- <br>
- <h2>Go ahead, knock yourself out!</h2>
- <br>
- <h3>Click on the buttons to display the top 8 gifs! Feel free to add any other gifs</h3>
- <div id="big-button">
- <div id="button">
+ <div class="page-container">
+    <div class="container">
+      <!-- intro -->
+      <div class="intro">
+          <h1>Welcome to Giphy Library</h1>
+          <br>
+          <h2>Enter a Name to create a Gif Button; then click said Button to display the top 5 GIFS! Have Fun!</h2>
+          <br>
+      </div>
+        
+        <div class="container" id="big-button">
 
-    <form id="gif-form">
-        <label for="gif-input">Add a Gif!</label>
-        <input type="text" id="gif-input">
-        <br>
-    
-        <!-- Button triggers new movie to be added -->
-        <input id="add-gif" type="submit" value="Add a Gif!">
-      </form>
+            <div class="row" id="button">
+                <form id="gif-form">
+                    <label for="gif-input"></label>
+                    <input type="text" placeholder="Add a GIF!" id="gif-input">
+                
+                    <!-- Button triggers new movie to be added -->
+                    <input id="add-gif" type="submit" value="Create Gif!">
+                  </form>
+            </div>
+       
+            <!-- Add new buttons to this DIV -->
+            <div id="buttons-view">
+            <!-- Generated gifs go here -->
+            </div>
+       </div>
+
+       <br><hr>
+
+       <!-- gifs go here -->
+       <div id="gif-div">
+
+       </div>
+
+    </div>
  </div>
-
- <!-- Add new buttons to this DIV -->
- <div id="buttons-view">
-<!-- <button data-search="samuel jackson">samuel jackson</button>-->
-</div>
-</div>
-<br><hr>
-<!-- gifs go here -->
-<div id="gif-div"></div>
+ 
 
 
  <script
