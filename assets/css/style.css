@@ -1,5 +1,10 @@
 /* Global Features */
 
+* {
+    font-family: 'Quicksand';
+    background: #333333;
+    color: white;
+}
 
 body {
     margin-left: auto;
@@ -24,12 +29,14 @@ h3 {
 
 .intro {
     padding: 3%;
-    background: lightblue;
+    /* background: lightblue; */
+    font-family: 'Quicksand';
+
 }
 
 /* Form */
 #button {
-    color: red;
+    /* color: yellow; */
     /* background: purple; */
     padding: 1%;
 }
@@ -63,11 +70,6 @@ h3 {
 }
 
 
-img {
-    width: 250px;
-    height: 180px;
-    float: left;
-}
 
 /* text-area */
 #gif-input {
@@ -82,15 +84,38 @@ img {
 
 /* gif making button */
 #add-gif {
-    background: green;
+    background: yellow;
     border: none;
     border-radius: 3px;
-    color: white;
-    padding: 12px 32px;
+    color: #333333;
+    font-weight: 500;
+    padding: 0.8% 1%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.2em;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+
+
+/* gif area */
+
+#gif-div {
+    overflow-x: hidden;
+    width: 94vw;
+    display: table;
+    margin: auto;
+    /* padding-left: -50px; */
+    /* justify-content: space-around; */
+    /* background: green; */
+}
+
+img {
+    height: 180px; 
+    width: 18vw;
+ 
+    float: left;
+    margin: 1px;
 }

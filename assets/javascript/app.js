@@ -40,7 +40,7 @@ function displayGifInfo() {
 
    var search = $(this).attr("data-search");
     
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dRMgGOE4F5aMUkRDnIRkZ5nK5W6N5rW4&limit=4";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dRMgGOE4F5aMUkRDnIRkZ5nK5W6N5rW4&limit=5";
 
         $.ajax ({url: queryURL, method: 'GET'})
         .then(function(response){
@@ -60,25 +60,26 @@ function displayGifInfo() {
             // if the rating is PG, display the image
 
             if (response.data[i].rating = 'g' || 'pg'|| 'y') {
-
+                console.log("appropiate!");
                 // The original had these 2 lines of text below
                 gifDiv.append(searchImage);
 
                 $("#gif-div").prepend(gifDiv);
 
-
-            } else if (response.data[i].rating == 'r' || 'pg-13'){
-
-                alert("Some images are inapropiate");
+            } else {
+                console.log("inappropiate");
+                // alert("Some images are inapropiate");
             }
             // gifDiv.append(searchImage);
 
             //     $("#gif-div").prepend(gifDiv);
 
-            console.log(response.data[i].rating);
+            console.log("The data rating for these images are: " + response.data[i].rating);
+            console.log(response);
 ////////////////////////////////////////////////////////////////
             
         }
+        // $("#gif-div").append("<div id='gif-div2'>");
 
 }); // <-- End of click function
 }
